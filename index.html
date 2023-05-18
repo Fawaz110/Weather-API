@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather | Fawaz 🌥</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <section class="home p-1">
+        <nav class="navbar navbar-expand-lg px-5 py-4">
+            <div class="container-fluid justify-content-around">
+                <a class="navbar-brand" href="#">
+                    <div class="logo d-flex justify-content-center align-items-center">
+                        <img src="imgs/logo@2x.png" class="w-50 me-1" alt="">
+                        <div class="text">
+                            <h4 class="text-light">Weather</h4>
+                            <span class="text-secondary">tagline goes here</span>
+                        </div>
+                    </div>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item mx-2">
+                            <a class="nav-link rounded rounded-pill px-4" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link rounded rounded-pill px-4" href="#">News</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link rounded rounded-pill px-4" href="#">Life Cameras</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link rounded rounded-pill px-4" href="#">Photos</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link rounded rounded-pill px-4" href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="main p-1">
+            <div class="container">
+                <div class="search-inp rounded rounded-pill position-relative d-flex align-items-center my-5">
+                    <input type="text" placeholder="Find your location..." class="w-100 rounded rounded-pill p-3"
+                        id="searchinp">
+                    <input type="submit" value="Find" class="rounded rounded-pill py-2 px-5 position-absolute">
+                </div>
+                <div class="row rounded rounded-3 overflow-hidden">
+                    <div class="today col-md-4 p-0">
+                        <div class="today-climate side"></div>
+                    </div>
+
+                    <div class="next-day col-md-4 p-0 center">
+                        <div class="next-day-climate">
+                            <div class="header layer text-center p-1">
+                                <p>Thursday</p>
+                            </div>
+                            <div
+                                class="climate-details p-1 d-flex justify-content-center align-items-center text-center">
+                                <div>
+                                    <img src="https:${final.forecast.forecastday[1].day.condition.icon}" alt="">
+                                    <div class="temp">
+                                        <h2>15<sup>o</sup>C</h2>
+                                        <h5><sup>o</sup>C</h5>
+                                    </div>
+                                    <span class="my-3">Mist</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="next-day col-md-4 p-0">
+                        <div class="next-day-climate side">
+                            <div class="header layer text-center p-1">
+                                <p>Thursday</p>
+                            </div>
+                            <div class="climate-details p-1 d-flex justify-content-center align-items-center">
+                                <div>
+                                    <h3>Cairo</h3>
+                                    <div class="temp">
+                                        <img src="" alt="">
+                                        <h2>15<sup>o</sup>C</h2>
+                                    </div>
+                                    <span class="my-3">Mist</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container my-5">
+            <div class="row">
+                <div class="search-inp rounded col-md-8 rounded-pill position-relative d-flex align-items-center my-4">
+                    <input type="text" placeholder="Enter your email to subscribe..."
+                        class="w-100 rounded rounded-pill p-3">
+                    <input type="submit" value="Subscribe" class="rounded rounded-pill py-2 px-5 position-absolute">
+                </div>
+                <div class="col-md-4 d-flex align-items-center">
+                    <div
+                        class="icon mx-2 pointer d-flex justify-content-center align-items-center p-3 rounded rounded-circle">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </div>
+                    <div
+                        class="icon mx-2 pointer d-flex justify-content-center align-items-center p-3 rounded rounded-circle">
+                        <i class="fa-brands fa-twitter"></i>
+                    </div>
+                    <div
+                        class="icon mx-2 pointer d-flex justify-content-center align-items-center p-3 rounded rounded-circle">
+                        <i class="fa-brands fa-google-plus-g"></i>
+                    </div>
+                    <div
+                        class="icon mx-2 pointer d-flex justify-content-center align-items-center p-3 rounded rounded-circle">
+                        <i class="fa-brands fa-pinterest-p"></i>
+                    </div>
+                </div>
+            </div>
+            <p class="my-4">Copyright 2014 Company name. Designed by Fawaz. All rights reserved</p>
+        </div>
+    </footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

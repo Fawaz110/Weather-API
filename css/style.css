@@ -1,0 +1,113 @@
+:root {
+    --main-bg: #1e202b;
+    --second-bg: #323544;
+    --text: #bfc1c8;
+    --light-blue: #009ad8;
+}
+
+body {
+    background-color: var(--second-bg);
+}
+h2 {
+    margin: 30px 0;
+    font-size: 3rem;
+}
+
+.col-md-4 span {
+    color: var(--light-blue);
+}
+
+p {
+    margin: 5px 0 !important;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    color: var(--text);
+}
+
+.home {
+    height: 100vh;
+    background-color: var(--main-bg);
+}
+
+.navbar-brand span {
+    font-size: .9rem;
+}
+
+.nav-link {
+    color: #FFF;
+    border: 3px solid var(--main-bg);
+}
+
+.nav-link:hover {
+    color: var(--light-blue);
+    border-color: var(--light-blue);
+}
+
+.main {
+    background-image: url(../imgs/banner.png);
+    background-repeat: no-repeat;
+}
+
+.search-inp {
+    background-color: var(--main-bg);
+}
+
+.next-day-climate .climate-details {
+    margin: 50px;
+}
+
+input[type="submit"] {
+    background-color: var(--light-blue);
+    top: 5px;
+    bottom: 5px;
+    right: 5px;
+    border: none;
+}
+
+input[type="text"] {
+    background-color: var(--main-bg);
+    border: none;
+    caret-color: #FFF;
+    color: #FFF;
+}
+
+input[type="text"]:focus {
+    outline: none;
+}
+
+.row {
+    background-color: var(--second-bg);
+}
+
+.layer {
+    background-color: rgba(0, 0, 0, .25);
+}
+
+.row .center {
+    background-color: var(--main-bg);
+}
+
+footer {
+    background-color: var(--second-bg);
+}
+
+.pointer {
+    cursor: pointer !important;
+}
+
+
+footer .col-md-4 .icon {
+    background-color: var(--main-bg);
+    height: 50px;
+    width: 50px;
+    color: var(--light-blue);
+    transition: .15s;
+    font-size: 1.2rem;
+}
+footer .col-md-4 .icon:hover {
+    color: #FFF;
+    background-color: var(--light-blue);
+}
